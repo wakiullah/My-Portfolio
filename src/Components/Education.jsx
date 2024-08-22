@@ -18,7 +18,7 @@ export default function Education() {
     },]
 
     return (
-        <div className='pt-20' id='education'>
+        <section className='pt-20' id='education'>
             <ul>
 
                 {educationItems.map((e, i) => {
@@ -26,6 +26,6 @@ export default function Education() {
                 })}
             </ul>
 
-        </div>
+        </section>
     )
 }

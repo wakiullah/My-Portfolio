@@ -56,7 +56,7 @@ export default function Projects() {
 
 
     return (
-        <div className='pt-20 mb-24' id='projects'>
+        <section className='pt-20 mb-24' id='projects'>
             <ul>
 
                 {files.map((e, i) => {
@@ -64,7 +64,7 @@ export default function Projects() {
                 })}
             </ul>
 
-        </div>
+        </section>
     )
 }
 
