@@ -1,5 +1,6 @@
 import React from 'react'
 import EducationItem from './singleComponents/EducationItem'
+import StickyBar from './singleComponents/StickyBar'
 
 export default function Education() {
     const educationItems = [{
@@ -18,13 +19,15 @@ export default function Education() {
     },]
 
     return (
-        <section className='pt-20' id='education'>
-            <ul>
-
-                {educationItems.map((e, i) => {
-                    return <EducationItem key={i} fromYear={e.fromYear} tittle={e.tittle} toYear={e.toYear} des={e.des} />
-                })}
-            </ul>
+        <section className=' pt-0 lg:pt-20' id='education'>
+            <StickyBar tittle={'Education'} />
+            <div>
+                <ul>
+                    {educationItems.map((e, i) => {
+                        return <EducationItem key={i} fromYear={e.fromYear} tittle={e.tittle} toYear={e.toYear} des={e.des} />
+                    })}
+                </ul>
+            </div>
 
         </section>
     )

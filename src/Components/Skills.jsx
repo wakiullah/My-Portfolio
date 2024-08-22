@@ -13,12 +13,14 @@ import sass from '../assets/sass.png'
 import tailwind from '../assets/tailwind.png'
 import thinking from '../assets/thinking.png'
 import solution from '../assets/solution.png'
+import StickyBar from './singleComponents/StickyBar'
 
 
 export default function Skills() {
 
     return (
-        <section id='skills' className='mb-24 pt-20'>
+        <section id='skills' className='mb-110 lg:mb-24 pt-20'>
+            {<StickyBar tittle={'Skills'} />}
             <div>
                 <ul className='grid grid-cols-2 gap-12  lg:gap-y-20'>
                     <li className='flex align-middle items-center '>

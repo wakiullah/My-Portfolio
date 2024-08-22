@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import ProjectItem from './singleComponents/ProjectItem'
+import StickyBar from './singleComponents/StickyBar'
 
 export default function Projects() {
     const [files, setFiles] = useState([
@@ -57,12 +58,14 @@ export default function Projects() {
 
     return (
         <section className='pt-20 mb-24' id='projects'>
-            <ul>
-
-                {files.map((e, i) => {
-                    return <ProjectItem key={i} img={e.img} tittle={e.tittle} link={e.link} des={e.des} languages={e.languages} />
-                })}
-            </ul>
+            {<StickyBar tittle={'Projects'}/>}
+            <div>
+                <ul className=' first:mt-0 '>
+                    {files.map((e, i) => {
+                        return <ProjectItem key={i} img={e.img} tittle={e.tittle} link={e.link} des={e.des} languages={e.languages} />
+                    })}
+                </ul>
+            </div>
 
         </section>
     )
