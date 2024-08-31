@@ -1,7 +1,6 @@
 import React from 'react'
 
 export default function EducationItem({ fromYear, toYear, tittle, des }) {
-    console.log(fromYear);
 
     return (
         <li className=' list-none mb-12'>
