@@ -7,7 +7,6 @@ import Education from './Components/Education'
 import Thankyou from './Components/Thankyou'
 
 function App() {
-
   return (
     <>
       <div className='mx-auto  text-left min-h-screen max-w-screen-xl pt-12 font-mono md:px-12 md:py-16 lg:px-20 lg:py-0'>
