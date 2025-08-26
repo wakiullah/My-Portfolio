@@ -14,7 +14,7 @@ import tailwind from '../assets/tailwind.png'
 import thinking from '../assets/thinking.png'
 import solution from '../assets/solution.png'
 import StickyBar from './singleComponents/StickyBar'
-import nextjs from '../assets/nextjs.png'
+import nextjs from '../assets/nextjs2.png'
 
 
 export default function Skills() {
